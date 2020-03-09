@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tolv</title>
+    <link href="https://fonts.googleapis.com/css?family=Yrsa:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+
+
+    <style type="text/css">
+        :root {
+            --gris: #222226;
+            --groc: #EFCB56;
+            --blau: #001DFF;
+            --crema: #FFF5EA;
+            --taronja: #FF6429;
+            --verd: #535851;
+            --nantes: 'Yrsa', serif;
+            --calibre: 'Roboto', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .titulo {
+            font-family: var(--nantes);
+            font-weight: 800;
+            font-size: 3em;
+        }
+
+        .titulo2 {
+            font-family: var(--calibre);
+            color: lightgray;
+        }
+
+        .subtitulo {
+            font-family: var(--calibre);
+            font-size: 0.75em;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 0.5fr);
+            grid-gap: 1px;
+        }
+
+        .container img {
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            font-family: var(--calibre);
+            color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em 4em;
+        }
+
+        nav a {
+            color: black;
+            margin: 0 2em 0;
+
+        }
+
+        .buscar {
+            padding-left: 30em;
+            padding-top: 2em;
+        }
+
+        a {
+            color: var(--taronja)
+        }
+
+        h1 {
+            display: flex;
+            padding-top: 1em;
+            padding-left: 8em;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .sofa rosa {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            flex-direction: column;
+            grid-column: span 1;
+        }
+
+        .sofa_rosa img {
+            display: flex;
+            flex-direction: column;
+            grid-column: span 1;
+            width: 50%;
+            height: 50%;
+        }
+
+        .time {
+            background: var(--groc);
+            text-align: center;
+            padding-top: 10em;
+            padding-bottom: 10em;
+            padding-right: 30em;
+            padding-left: 30em;
+        }
+
+        .f1,
+        .f5 {
+            display: flex;
+            flex-direction: column;
+            grid-column: span 2;
+        }
+
+        .f2,
+        .f3,
+        .f4,
+        .f6 {
+            display: flex;
+            flex-direction: column;
+            grid-column: span 1;
+        }
+
+        footer {
+            padding: 10em;
+            font-family: var(--calibre);
+            color: white;
+            background: var(--verd);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        .cont p {
+            padding-top: 1em;
+        }
+
+        .access {
+            padding-top: 2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <a href="">Products</a>
+            <a href="">Stocklist</a>
+            <a href="">About us</a>
+        </nav>
+        <h1>
+            <img class="logo" src="img/logo/logo.png" alt="">
+        </h1>
+        <div class="buscar"><i class="fas fa-search"></i></div>
+
+    </header>
+    <div>
+        <div class="sofa_rosa">
+            <div class="texto">
+                <p class="titulo">Lift the blind to let in the light. A moment of calm before the day begins.</p>
+                <p class="subtitulo">Featuring <a href="#">Cherry</a>Cherry sofa and <a href="#">Kile coffee table</a></p>
+            </div>
+            <div>
+                <img src="img/baixa.jpeg" alt="">
+            </div>
+        </div>
+        <div class="time">
+            <p class="titulo">Time for Living</p>
+            <p> Take time for life’s little moments. Browsing the news as you eat breakfast. Setting the table for hungry guests. Sinking in to your favourite armchair. At Tolv, your daily rituals are at the heart of our design. We make furniture to give you your best day, every day.</p>
+            <p class="subtitulo">Find out more <a href="#">About us</a>
+            </p>
+        </div>
+        <div class="container">
+            <div class="f1">
+                <img src="img/baixa%20(1).jpeg" alt="">
+            </div>
+            <div class="f2">
+                <img src="img/baixa%20(2).jpeg" alt="">
+            </div>
+            <div class="f3">
+                <img src="img/baixa%20(3).jpeg" alt="">
+            </div>
+            <div class="f4">
+                <img src="img/baixa%20(4).jpeg" alt="">
+            </div>
+            <div class="f5">
+                <img src="img/baixa%20(5).jpeg" alt="">
+            </div>
+            <div class="f6">
+                <img src="img/baixa%20(6).jpeg" alt="">
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p class="titulo2 prod">Products:</p>
+                <div class="cont">
+                    <p>Lounge Chairs</p>
+                    <p>Sofas</p>
+                    <p>Daybeds</p>
+                    <p>Poufs</p>
+                    <p>Dining Chairs</p>
+                    <p>Stools</p>
+                    <p>Tables & Desks</p>
+                    <p>Storage</p>
+                </div>
+            </div>
+            <div>
+                <p class="titulo2 info">Useful information:</p>
+                <div class="cont">
+                    <p>Our stockists</p>
+                    <p>Our designers</p>
+                    <p>Product care</p>
+                </div>
+            </div>
+            <div>
+                <p class="titulo2 comp">Company:</p>
+                <div class="cont">
+                    <p>News</p>
+                    <p>About us</p>
+                    <p>Contact us</p>
+                </div>
+            </div>
+            <div>
+                <p class="titulo2 connect">Connect with us:</p>
+                <div class="cont">
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Blank</p>
+                </div>
+                <p class="titulo2 access">Access to:</p>
+                <div class="cont">
+                    <p>Client login</p>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
